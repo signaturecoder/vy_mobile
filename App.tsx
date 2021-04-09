@@ -1,6 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
+import VYHeader from './components/Header';
+
 
 import useCachedResources from './hooks/useCachedResources';
 import useColorScheme from './hooks/useColorScheme';
@@ -15,6 +17,7 @@ export default function App() {
   } else {
     return (
       <SafeAreaProvider>
+          <VYHeader />
         <Navigation colorScheme={colorScheme} />
         <StatusBar />
       </SafeAreaProvider>
