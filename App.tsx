@@ -11,8 +11,10 @@ import Navigation from './navigation';
 export default function App() {
   const isLoadingComplete = useCachedResources();
   const colorScheme = useColorScheme();
+  console.log('outside ', isLoadingComplete);
 
   if (!isLoadingComplete) {
+    console.log('inside ', isLoadingComplete);
     return null;
   } else {
     return (

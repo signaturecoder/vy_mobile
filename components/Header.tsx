@@ -18,7 +18,7 @@ export default VYHeader;
 const styles = StyleSheet.create({
     container: {
       paddingTop: 50,
-      flex: 1,
+      // flex: 1,
       flexDirection: 'row',
       justifyContent: 'space-around',
       
